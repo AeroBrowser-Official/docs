@@ -18,9 +18,9 @@ import {
 /** @type {import('nextra-theme-docs').DocsThemeConfig} */
 const themeConfig = {
   project: {
-    link: "https://github.com/vercel/swr",
+    link: "https://github.com/AeroBrowser-Official/AeroBrowser",
   },
-  docsRepositoryBase: "https://github.com/vercel/swr-site/blob/main",
+  docsRepositoryBase: "https://github.com/AeroBrowser-Official/Site/blob/main",
   useNextSeoProps() {
     return {
       titleTemplate: "%s – AeroBrowser Docs",
@@ -59,7 +59,7 @@ const themeConfig = {
     const titleSuffix = useLocalesMap(titleMap);
     const description = useLocalesMap(headDescriptionMap);
 
-    const imageUrl = new URL("https://swr-card.vercel.app");
+    const imageUrl = new URL("https://aerobrowser-docs-card.pages.dev");
 
     if (!/\/index\.+/.test(route)) {
       imageUrl.searchParams.set("title", title || titleSuffix);
