@@ -1,84 +1,55 @@
 ---
-title: React Hooks for Data Fetching
+title: "FOSSBilling - Free and open source hosting automation"
 ---
 
-import { Callout } from 'nextra-theme-docs'
-import Features from 'components/features'
-import { Bleed } from 'nextra-theme-docs'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
-{
-// wrapped with {} to mark it as javascript so mdx will not put it under a p tag
+export const gradientAnimation = {
+  animate: {
+    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+  },
+  transition: {
+    duration: 5,
+    ease: "linear",
+    repeat: Infinity,
+  },
 }
-{<h1 className="text-center text-4xl tracking-tighter font-extrabold md:text-5xl mt-8">SWR</h1>}
 
-<Bleed><Features/></Bleed>
-
-The name “SWR” is derived from `stale-while-revalidate`, a HTTP cache invalidation strategy popularized by [HTTP RFC 5861](https://tools.ietf.org/html/rfc5861).
-SWR is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the up-to-date data.
-
-<Callout emoji="✅">
-  With SWR, components will get a stream of data updates <strong>constantly</strong> and <strong>automatically</strong>.<br/>
-  And the UI will be always <strong>fast</strong> and <strong>reactive</strong>.
-</Callout>
-
-<div className="mt-16 mb-20 text-center">
-  [Get Started](/docs/getting-started) · [Examples](/examples/basic) · [Blog](/blog) · [GitHub Repository](https://github.com/vercel/swr)
+<div className="min-h-screen flex items-center justify-center bg-[#111]">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 className="flex flex-col gap-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+      <span className="text-white">Free and open source</span>
+<motion.span
+  initial={{ backgroundPosition: "0% 50%" }}
+  animate={gradientAnimation.animate}
+  transition={gradientAnimation.transition}
+  className="bg-[length:200%_200%] bg-gradient-to-r from-[#3b82f6] via-[#10b981] to-[#3b82f6] bg-clip-text text-transparent whitespace-nowrap leading-none py-5"
+>
+  hosting automation
+</motion.span>
+    </h1>
+    <p className="text-xl sm:text-2xl mb-8 text-gray-300">
+      Empower your hosting business with FOSSBilling, the free and open-source solution for efficient billing and client management.
+    </p>
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <motion.div
+        initial={{ backgroundPosition: "0% 50%" }}
+        animate={gradientAnimation.animate}
+        transition={gradientAnimation.transition}
+        className="inline-block rounded-full bg-[length:200%_200%] bg-gradient-to-r from-[#3b82f6] via-[#10b981] to-[#3b82f6] p-[1px]"
+      >
+        <Link 
+          href="/docs/introduction"
+          className="inline-block px-8 py-3 text-lg font-semibold text-white rounded-full bg-[#111] hover:bg-transparent transition-colors duration-300"
+        >
+          Get Started
+        </Link>
+      </motion.div>
+    </motion.div>
+  </div>
 </div>
 
-## Overview [#overview]
-
-```jsx
-import useSWR from 'swr'
-
-function Profile() {
-  const { data, error, isLoading } = useSWR('/api/user', fetcher)
-
-  if (error) return <div>failed to load</div>
-  if (isLoading) return <div>loading...</div>
-  return <div>hello {data.name}!</div>
-}
-```
-
-In this example, the `useSWR` hook accepts a `key` string and a `fetcher` function. `key` is a unique identifier of the data (normally the API URL)
-and will be passed to `fetcher`. `fetcher` can be any asynchronous function which returns the data, you can use the native fetch or tools like Axios.
-
-The hook returns 3 values: `data`, `isLoading` and `error`, based on the status of the request.
-
-## Features [#features]
-
-With just one single line of code, you can simplify the logic of data fetching in your project, and also have all these amazing features out-of-the-box:
-
-- **Fast**, **lightweight** and **reusable** data fetching
-- Built-in **cache** and request deduplication
-- **Real-time** experience
-- Transport and protocol agnostic
-- SSR / ISR / SSG support
-- TypeScript ready
-- React Native
-
-SWR has you covered in all aspects of speed, correctness, and stability to help you build better experiences:
-
-- Fast page navigation
-- Polling on interval
-- Data dependency
-- Revalidation on focus
-- Revalidation on network recovery
-- Local mutation (Optimistic UI)
-- Smart error retry
-- Pagination and scroll position recovery
-- React Suspense
-
-And a lot [more](/docs/getting-started).
-
-## Community [#community]
-
-<p className="flex h-6 mt-4 gap-2">
-  <img alt="stars" src="https://badgen.net/github/stars/vercel/swr" />
-  <img alt="downloads" src="https://badgen.net/npm/dt/swr" />
-  <img alt="license" src="https://badgen.net/npm/license/swr" />
-</p>
-
-SWR is created by the same team behind [Next.js](https://nextjs.org), the React framework.
-Follow [@vercel](https://twitter.com/vercel) on Twitter for future project updates.
-
-Feel free to join the [discussions on GitHub](https://github.com/vercel/swr/discussions)!
