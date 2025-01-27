@@ -18,8 +18,16 @@ export const gradientAnimation = {
 
 <div className="min-h-screen flex items-center justify-center bg-[#111]">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 className="flex flex-col gap-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
-      <span className="text-white">AeroBrowser Plugins, Themes and more</span>
+    <h1 className="flex flex-col gap-2 text-left text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+      <motion.span
+        initial={{ backgroundPosition: "0% 50%" }}
+        animate={gradientAnimation.animate}
+        transition={gradientAnimation.transition}
+        className="bg-[length:200%_200%] bg-gradient-to-r from-[#3b82f6] via-[#10b981] to-[#3b82f6] bg-clip-text text-transparent whitespace-nowrap leading-none py-5"
+      >
+        AeroBrowser
+      </motion.span>
+      <span className="text-white">Themes, Plugins, and more</span>
 <motion.span
   initial={{ backgroundPosition: "0% 50%" }}
   animate={gradientAnimation.animate}
@@ -52,4 +60,3 @@ made Easy
     </motion.div>
   </div>
 </div>
-
