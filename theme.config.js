@@ -23,7 +23,7 @@ const themeConfig = {
   docsRepositoryBase: "https://github.com/vercel/swr-site/blob/main",
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – SWR",
+      titleTemplate: "%s – AeroBrowser Docs",
     };
   },
   toc: {
@@ -46,7 +46,7 @@ const themeConfig = {
         <Logo height={12} />
         <span
           className="mx-2 font-extrabold hidden md:inline select-none"
-          title={`SWR: ${title}`}
+          title={`AeroBrowser Docs: ${title}`}
         >
           SWR
         </span>
