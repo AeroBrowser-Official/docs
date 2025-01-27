@@ -48,7 +48,7 @@ const themeConfig = {
           className="mx-2 font-extrabold hidden md:inline select-none"
           title={`AeroBrowser Docs: ${title}`}
         >
-          SWR
+          AeroBrowser Docs
         </span>
       </>
     );
