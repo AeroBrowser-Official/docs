@@ -1,30 +1,22 @@
 /**
  * @typedef {"en-US"} DefaultLocale
- * @typedef {DefaultLocale | "zh-CN" | "es-ES" | "fr-FR" | "pt-BR" | "ja" | "ko" | "ru"} Locale
+ * @typedef {DefaultLocale | "nl-NL" | "de-DE" | "fr-FR"} Locale
  */
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const languageMap = {
   "en-US": "English",
-  "es-ES": "Español",
+  "nl-NL": "Nederlands",
+  "de-DE": "Deutsch",
   "fr-FR": "Français",
-  "pt-BR": "Português Brasileiro",
-  "zh-CN": "简体中文",
-  ja: "日本語",
-  ko: "한국어",
-  ru: "Русский",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const titleMap = {
-  "en-US": "React Hooks for Data Fetching",
-  "es-ES": "Biblioteca React Hooks para la obtención de datos",
-  "fr-FR": "Bibliothèque de React Hooks pour la récupération de données",
-  "pt-BR": "React Hooks para Data Fetching",
-  "zh-CN": "用于数据请求的 React Hooks 库",
-  ja: "データ取得のための React Hooks ライブラリ",
-  ko: "데이터 가져오기를 위한 React Hooks",
-  ru: "React хуки для выборки данных",
+  "en-US": "Learn and master WinUI 3.",
+  "nl-NL": "Leer en master WinUI 3",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, {lightweight:string;realtime?:string;suspense?:string;pagination?:string;backendAgnostic?:string;renderingStrategies?:string;typescript?:string;remoteLocal?:string;}>>} */
@@ -68,33 +60,26 @@ export const featuresMap = {
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const headDescriptionMap = {
-  "en-US": "SWR is a React Hooks library for data fetching. SWR first returns the data from cache (stale), then sends the fetch request (revalidate), and finally comes with the up-to-date data again.",
-  "fr-FR": "SWR est une libraire de React Hooks pour récupérer des données. SWR retourne d'abord les données en cache (stale), puis envoie la requête (revalidate), et enfin retourne les données à jour.",
-  "pt-BR": "SWR é uma biblioteca React Hooks para data fetching. SWR primeiro retorna os dados do cache (stale), então envia a requisição de busca (revalidate), e finalmente vem com os dados atualizados novamente.",
-  ru: "SWR — это библиотека React хуков для получения данных. SWR сначала возвращает данные из кеша (устаревшие), затем отправляет запрос на выборку (ревалидация) и, наконец, снова получает актуальные данные.",
+  "en-US": "WinUI Blog helps you learn and master WinUI 3 with a modern docs with samples and templates.",
+  "nl-NL": "WinUI Blog helpt you met het leeren and mastere van het programmeer taal WinUI 3 met een moderne docs met samples and templates.",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const feedbackLinkMap = {
   "en-US": "Question? Give us feedback →",
-  "es-ES": "¿Dudas? Danos tu feedback →",
-  "fr-FR": "Question? Donnez-nous votre avis →",
-  "pt-BR": "Dúvidas? Nos dê feedback →",
-  "zh-CN": "有疑问？给我们反馈 →",
-  ko: "질문이 있으신가요? 피드백을 남겨주세요 →",
-  ru: "Вопросы? Оставьте нам отзыв →",
+  "nl-NL": "Vraag? Geef ons feedback →",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const editTextMap = {
   "en-US": "Edit this page on GitHub →",
-  "es-ES": "Edite esta página en GitHub →",
-  "fr-FR": "Modifier cette page sur GitHub →",
-  "pt-BR": "Edite essa página no GitHub →",
-  "zh-CN": "在 GitHub 上编辑本页 →",
-  ja: "Github で編集する →",
-  ko: "Github에서 이 페이지 편집하기 →",
-  ru: "Редактировать эту страницу на GitHub →",
+  "nl-NL": "Bewerk deze pagina op github →",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, { utmSource: string; text: string; suffix?: string | undefined }>>} */
@@ -112,25 +97,23 @@ export const footerTextMap = {
 /** @type {Readonly<Record<Locale, string>>} */
 export const tableOfContentsTitleMap = {
   "en-US": "On This Page",
-  "es-ES": "En esta página",
-  "fr-FR": "Sur cette page",
-  "pt-BR": "Nessa página",
-  ru: "На этой странице",
+  "nl-NL": "Op deze pagina",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const searchPlaceholderMap = {
   "en-US": "Search documentation...",
-  "es-ES": "Buscar documento...",
-  "fr-FR": "Rechercher dans la doc...",
-  "pt-BR": "Buscar documentação...",
-  ko: "문서 검색...",
-  ru: "Искать в документации...",
+  "nl-NL": "Zoek documentatie...",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const gitTimestampMap = {
-  "en-US": "Last updated on",
-  "fr-FR": "Dernière mise à jour le",
-  ru: "Последнее обновление",
+"en-US": "Last updated on",
+  "nl-NL": "laats geupdate op",
+  "de-DE": "Deutsch",
+  "fr-FR": "Français",
 };

@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 /**
  * @typedef {"en-US"} DefaultLocale
- * @typedef {DefaultLocale | "zh-CN" | "es-ES" | "fr-FR" | "pt-BR" | "ja" | "ko" | "ru"} Locale
+ * @typedef {DefaultLocale | "nl-NL" | "de-DE" | "fr-FR"} Locale
  * @typedef {{locale?: Locale | undefined; locales?: Locale[] | undefined; defaultLocale?: DefaultLocale | undefined}} TypedRouter
  * @typedef {Omit<import('next/router').NextRouter, "locale" | "locales" | "defaultLocale"> & TypedRouter} NextRouter
  * @template T
@@ -35,7 +35,9 @@ export default function useLocalesMap(localesMap) {
     );
   }
 
-  if (["string", "number", "symbol"].includes(typeof localesMap[defaultLocale])) {
+  if (
+    ["string", "number", "symbol"].includes(typeof localesMap[defaultLocale])
+  ) {
     return localesMap[locale] || localesMap[defaultLocale];
   }
 
