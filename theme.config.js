@@ -66,7 +66,7 @@ const themeConfig = {
     }
 
     const contentLanguage = locales.join(", ");
-    const ogTitle = title ? `${title} – SWR` : `SWR: ${titleSuffix}`;
+    const ogTitle = title ? `${title} – AeroBrowser Docs` : `AeroBrowser Docs: ${titleSuffix}`;
     const ogDescription = frontMatter.description || description;
     const ogImage = frontMatter.image || imageUrl.toString();
 
@@ -122,7 +122,7 @@ const themeConfig = {
 
       return (
         <a
-          href={`https://vercel.com/?utm_source=${utmSource}`}
+          href={`https://www.cloudflare.com`}
           target="_blank"
           rel="noopener"
           className="inline-flex items-center no-underline text-current font-semibold"

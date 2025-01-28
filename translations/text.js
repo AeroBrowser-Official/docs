@@ -13,7 +13,7 @@ export const languageMap = {
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const titleMap = {
-  "en-US": "Learn and master WinUI 3.",
+  "en-US": "AeroBrowser Docs",
   "nl-NL": "Leer en master WinUI 3",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
@@ -60,7 +60,7 @@ export const featuresMap = {
 
 /** @type {Readonly<Record<Locale, string>>} */
 export const headDescriptionMap = {
-  "en-US": "WinUI Blog helps you learn and master WinUI 3 with a modern docs with samples and templates.",
+  "en-US": "The Docs for learning about building themes plugins and more for AeroBrowser",
   "nl-NL": "WinUI Blog helpt you met het leeren and mastere van het programmeer taal WinUI 3 met een moderne docs met samples and templates.",
   "de-DE": "Deutsch",
   "fr-FR": "Français",
