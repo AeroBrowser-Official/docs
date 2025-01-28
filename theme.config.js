@@ -59,7 +59,7 @@ const themeConfig = {
     const titleSuffix = useLocalesMap(titleMap);
     const description = useLocalesMap(headDescriptionMap);
 
-    const imageUrl = new URL("https://aerobrowser-docs-card.pages.dev");
+    const imageUrl = new URL("https://aerobrowser-docs-card.pages.dev/Card.png");
 
     if (!/\/index\.+/.test(route)) {
       imageUrl.searchParams.set("title", title || titleSuffix);
