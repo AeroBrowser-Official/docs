@@ -27,11 +27,28 @@ const themeConfig = {
     };
   },
   toc: {
+    backToTop: true,
     float: true,
     title: () => useLocalesMap(tableOfContentsTitleMap),
   },
+  chat: {
+    link: 'https://',
+  },
+  banner: {
+    dismissible: false,
+    key: 'Beta',
+    text: (
+      <a href="#" target="_blank">
+      🐛 AeroBrowser And AeroBrowser Docs is still in Alpha Stage you may expect bugs! Read more →
+      </a>
+    ),
+  },
   search: {
     placeholder: () => useLocalesMap(searchPlaceholderMap),
+  },
+  sidebar: {
+    defaultMenuCollapseLevel: 1, // Collapsed by default at level 1 (top-level folders only)
+    toggleButton: true // Automatically collapse folders that do not contain an active/focused route
   },
   editLink: {
     text: () => useLocalesMap(editTextMap),
