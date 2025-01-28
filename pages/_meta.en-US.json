@@ -10,5 +10,11 @@
   "docs": {
     "title": "Docs",
     "type": "page"
+  },
+"Site": {
+    "title": "Site ↗",
+    "type": "page",
+    "href": "https://aerobrowser.pages.dev",
+    "newWindow": true
   }
 }
