@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -25,7 +23,7 @@ export default function FeedbackWidget() {
     <div className="max-w-xl mx-auto">
       <motion.div
         initial={false}
-        animate={{ backgroundColor: isOpen ? "rgba(255, 255, 255, 0.03)" : "transparent" }}
+        animate={{ backgroundColor: isOpen ? "rgba(0, 0, 0, 0.1)" : "transparent" }}
         className="rounded-xl p-6 border border-zinc-800"
       >
         <div className="flex items-center gap-3">
@@ -43,7 +41,7 @@ export default function FeedbackWidget() {
                 className={`w-8 h-8 flex items-center justify-center rounded-full text-lg border ${
                   selectedEmoji === index
                     ? "bg-zinc-800 text-white border-zinc-700"
-                    : "border-zinc-700 hover:bg-zinc-800/10"
+                    : "border-zinc-700 hover:bg-zinc-800/20"
                 }`}
               >
                 {emoji}
@@ -64,7 +62,7 @@ export default function FeedbackWidget() {
               <div className="space-y-4 pt-4">
                 <textarea
                   placeholder="Type your feedback here."
-                  className="w-full min-h-[100px] p-3 text-sm bg-zinc-800/5 rounded-lg border border-zinc-700 resize-none placeholder:text-zinc-500 focus:ring-2 focus:ring-zinc-500 focus:outline-none"
+                  className="w-full min-h-[100px] p-3 text-sm bg-zinc-800/10 rounded-lg border border-zinc-700 resize-none placeholder:text-zinc-500 focus:ring-2 focus:ring-zinc-500 focus:outline-none"
                 />
                 <div className="flex justify-end gap-2">
                   <Button
@@ -89,4 +87,3 @@ export default function FeedbackWidget() {
     </div>
   )
 }
-
