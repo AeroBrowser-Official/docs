@@ -56,6 +56,9 @@ const themeConfig = {
   feedback: {
     content: () => useLocalesMap(feedbackLinkMap),
   },
+  primaryHue: { dark: 296, light: 296 },  // Set the hue for both dark and light themes
+  primarySaturation: { dark: 100, light: 100 },  // Set saturation for both dark and light themes
+  primaryLightness: { dark: 35, light: 35 },
   logo: () => {
     const title = useLocalesMap(titleMap);
     return (
